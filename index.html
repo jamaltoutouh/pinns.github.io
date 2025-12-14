@@ -230,9 +230,30 @@
       align-items: start;
     }
 
+    /* ============ OVERVIEW MEDIA ============ */
+    .overview-media {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+
+    .overview-logo {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      border: 0px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-light);
+    }
+
     @media (max-width: 768px) {
       .grid-2 {
         grid-template-columns: 1fr;
+      }
+      .overview-logo {
+        width: 40%;
+        max-width: 220px;
+        margin-top: 1rem;
       }
     }
 
@@ -492,7 +513,7 @@
     }
 
     footer a {
-      color: var(--primary);
+      color: white;
     }
 
     /* ============ RESPONSIVE ============ */
@@ -545,9 +566,9 @@
         <a href="#why">Why</a>
         <a href="#objectives">Objectives</a>
         <a href="#team">Team</a>
+        <a href="#open-science">Published papers</a>
         <a href="#paper">Paper results</a>
         <a href="#outputs">Outputs</a>
-        <a href="#open-science">Open science</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -555,9 +576,9 @@
 
   <main>
     <!-- OVERVIEW -->
-    <section id="overview" > 
+    <section id="overview">
       <div class="container">
-        <!-- <div class="grid-2"> -->
+        <div class="grid-2">
           <div>
             <h2>Overview</h2>
             <p>
@@ -571,18 +592,10 @@
               <strong>forward and inverse problems in fluid mechanics</strong>.
             </p>
           </div>
-
-        <!--
-          <aside class="card">
-            <h3 class="card-title">Quick facts</h3>
-            <ul class="list">
-              <li><strong>Focus:</strong> PINNs + EC for fluid mechanics</li>
-              <li><strong>Outputs:</strong> Tools + library + publications</li>
-              <li><strong>Open science:</strong> GitHub-based reproducibility</li>
-            </ul>
+          <aside class="overview-media">
+            <img class="overview-logo" src="assets/project/logo.jpg" alt="Project logo">
           </aside>
-        -->
-        <!-- </div> -->
+        </div>
       </div>
     </section>
 
@@ -638,7 +651,7 @@
     </section>
 
     <!-- TEAM -->
-    <section id="team">
+    <section id="team" class="section-muted">
       <div class="container">
         <h2>Team</h2>
 
@@ -658,35 +671,156 @@
           </article>
 
           <article class="team-card">
-            <img class="avatar" src="assets/team/placeholder.jpg" alt="Sergio Nesmachnow">
+            <img class="avatar" src="assets/team/Sergio-Nesmachnow.webp" alt="Sergio Nesmachnow">
             <div class="team-body">
               <h3>Sergio Nesmachnow</h3>
-              <p class="role">Co-Investigator / Collaborator</p>
+              <p class="role">Researcher / Collaborator</p>
               <p class="affiliation">Universidad de la República (Uruguay)</p>
               <div class="links">
-                <a href="#" target="_blank" rel="noopener">Website</a>
-                <a href="#" target="_blank" rel="noopener">Scholar</a>
-                <a href="#" target="_blank" rel="noopener">ORCID</a>
+                <a href="https://scholar.google.com/citations?hl=en&user=8uu1SW0AAAAJ" target="_blank" rel="noopener">Scholar</a>
+                <a href="https://orcid.org/0000-0002-8146-4012" target="_blank" rel="noopener">ORCID</a>
               </div>
             </div>
           </article>
 
+                    <!-- Francisco Chicano -->
+                    <article class="team-card">
+                      <img class="avatar" src="assets/team/francis_chicano.jpg" alt="Francisco Chicano">
+                      <div class="team-body">
+                        <h3>Francisco Chicano</h3>
+                        <p class="role">Researcher / Collaborator</p>
+                        <p class="affiliation">Universidad de Málaga (Spain)</p>
+                        <div class="links">
+                          <a href="https://franciscochicano.es/" target="_blank" rel="noopener">Web</a>
+                          <a href="https://scholar.google.com/citations?hl=en&user=BzjDlpUAAAAJ" target="_blank" rel="noopener">Scholar</a>
+                          <a href="https://orcid.org/0000-0003-1259-2990" target="_blank" rel="noopener">ORCID</a>
+                        </div>
+                      </div>
+                    </article>
+
+
+
+          <!-- Christian Cintrano -->
           <article class="team-card">
-            <img class="avatar" src="assets/team/placeholder.jpg" alt="Team member">
+            <img class="avatar" src="assets/team/no-face2.jpg" alt="Christian Cintrano">
             <div class="team-body">
-              <h3>Team member</h3>
-              <p class="role">Role / Position</p>
-              <p class="affiliation">Institution</p>
+              <h3>Christian Cintrano</h3>
+              <p class="role">Researcher / Collaborator</p>
+              <p class="affiliation">Universidad de Málaga (Spain)</p>
               <div class="links">
-                <a href="#" target="_blank" rel="noopener">Website</a>
-                <a href="#" target="_blank" rel="noopener">Scholar</a>
-                <a href="#" target="_blank" rel="noopener">ORCID</a>
+                <a href="https://itis.uma.es/personal/christian-cintrano-lopez/" target="_blank" rel="noopener">Web</a>
+                <a href="https://scholar.google.com/citations?hl=en&user=uiC1edgAAAAJ" target="_blank" rel="noopener">Scholar</a>
+                <a href="https://orcid.org/0000-0003-2346-2198" target="_blank" rel="noopener">ORCID</a>
               </div>
             </div>
           </article>
+
+
+
+          <!-- Zakaria Dahi -->
+          <article class="team-card">
+            <img class="avatar" src="assets/team/no-face2.jpg" alt="Zakaria A. Dahi">
+            <div class="team-body">
+              <h3>Zakaria A. Dahi</h3>
+              <p class="role">Researcher / Collaborator</p>
+              <p class="affiliation">Universidad de Málaga (Spain)</p>
+              <div class="links">
+                <a href="https://itis.uma.es/en/personal/zakaria-abdelmoiz-dahi-2/" target="_blank" rel="noopener">Web</a>
+                <a href="https://scholar.google.com/citations?hl=fr&user=-DsPwqIAAAAJ" target="_blank" rel="noopener">Scholar</a>
+                <a href="https://orcid.org/0000-0001-8022-4407" target="_blank" rel="noopener">ORCID</a>
+              </div>
+            </div>
+          </article>
+
+
+
+          <!-- Martín Draper -->
+          <article class="team-card">
+            <img class="avatar" src="assets/team/no-face2.jpg" alt="Martín Draper">
+            <div class="team-body">
+              <h3>Martín Draper</h3>
+              <p class="role">Researcher / Collaborator</p>
+              <p class="affiliation">Universidad de la República (Uruguay)</p>
+              <div class="links">
+                <a href="https://www.fing.edu.uy/es/node/49939" target="_blank" rel="noopener">Web</a>
+                <a href="https://scholar.google.com/scholar?q=Mart%C3%ADn+Draper+Universidad+de+la+Rep%C3%BAblica" target="_blank" rel="noopener">Scholar</a>
+              </div>
+            </div>
+          </article>
+
+
         </div>
       </div>
     </section>
+
+
+    <!-- OPEN SCIENCE -->
+    <section id="open-science">
+      <div class="container">
+        <h2>Published papers</h2>
+        <p>Here you have published papers with the main outcomes related to the project.</p>
+
+        <h3>Journal articles</h3>
+        <ul class="list">
+          <li>
+            Bove, M., López, B., Toutouh, J., Nesmachnow, S., Draper, M. (2023).
+            <em>Estimation of wind turbine wakes with generative-adversarial networks.</em>
+            <strong>Journal of Physics: Conference Series</strong>, 2505, 012053.
+          </li>
+
+
+  <li>
+    Toutouh, J., Nalluru, S., Hemberg, E., &amp; O’Reilly, U. M. (2023).
+    <em>Semi-supervised generative adversarial networks with spatial coevolution for enhanced image generation and classification.</em>
+    <strong>Applied Soft Computing</strong>, 148, 110890.
+  </li>
+        </ul>
+        <h3>Conference papers (CORE indexed)</h3>
+<ul class="list">
+  <li>
+    Toutouh, J., Nalluru, S., Hemberg, E., &amp; O'Reilly, U. M. (2023).
+    <em>Semi-supervised learning with coevolutionary generative adversarial networks.</em>
+    <strong>Proceedings of the Genetic and Evolutionary Computation Conference (GECCO)</strong>, pp. 568–576.
+  </li>
+
+
+  <li>
+    Hemberg, E., O'Reilly, U. M., &amp; Toutouh, J. (2024).
+    <em>Cooperative Coevolutionary Spatial Topologies for Autoencoder Training.</em>
+    <strong>Proceedings of the Genetic and Evolutionary Computation Conference (GECCO)</strong>, pp. 331–339.
+  </li>
+
+  <li>
+    Sedeño, F., Toutouh, J., &amp; Chicano, F. (2025).
+    <em>Generate more than one child in your co-evolutionary semi-supervised learning GAN.</em>
+    <strong>Applications of Evolutionary Computation (EvoStar)</strong>, pp. 55–70. Springer Nature Switzerland.
+  </li>
+
+  <li>
+    Jorgensen, S., Hemberg, E., Toutouh, J., &amp; O'Reilly, U. M. (2025).
+    <em>Guiding Evolutionary AutoEncoder Training with Activation-Based Pruning Operators.</em>
+    <strong>Proceedings of the Genetic and Evolutionary Computation Conference (GECCO)</strong>, pp. 386–396.
+  </li>
+
+</ul>
+        <h3>Conference papers</h3>
+        <ul class="list">
+
+  <li>
+    Correa, J., Mignaco, J., Rey, G., Machín, B., Nesmachnow, S., &amp; Toutouh, J. (2023).
+    <em>Multiobjective evolutionary search of the latent space of Generative Adversarial Networks for human face generation.</em>
+    <strong>Proceedings of the Companion Conference on Genetic and Evolutionary Computation (GECCO Companion)</strong>, pp. 1768–1776.
+  </li>
+
+  <li>
+    Mignaco, J., Rey, G., Correa, J., Nesmachnow, S., &amp; Toutouh, J. (2024).
+    <em>Empirical comparison of evolutionary approaches for searching the latent space of Generative Adversarial Networks for the human face generation problem.</em>
+    <strong>Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO Companion)</strong>, pp. 1631–1639.
+  </li>
+        </ul>
+      </div>
+    </section>
+
 
     <!-- PAPER RESULTS -->
     <section id="paper" class="section-muted">
@@ -806,34 +940,6 @@
       </div>
     </section>
 
-    <!-- OPEN SCIENCE -->
-    <section id="open-science" class="section-muted">
-      <div class="container">
-        <h2>Open science</h2>
-        <p>We will publish:</p>
-        <ul class="list">
-          <li>Source code (open repository)</li>
-          <li>Reproducible configurations and experiment logs</li>
-          <li>Documentation and usage examples oriented to non-experts</li>
-        </ul>
-
-        <h3>Ethics</h3>
-        <p>
-          This project does not involve living subjects or private personal data; no specific ethical concerns 
-          have been identified.
-        </p>
-
-        <h3>Related publications</h3>
-        <ul class="list">
-          <li>
-            <strong>Bove, M., López, B., Toutouh, J., Nesmachnow, S., Draper, M.</strong> (2023).
-            <em>Estimation of wind turbine wakes with generative-adversarial networks.</em>
-            Journal of Physics: Conference Series, 2505, 012053.
-          </li>
-        </ul>
-      </div>
-    </section>
-
     <!-- CONTACT -->
     <section id="contact">
       <div class="container">
@@ -855,7 +961,8 @@
 
   <footer>
     <div class="container">
-      <p>© <span id="year"></span> — Evolutionary PINNs for Fluid Mechanics · Built for GitHub Pages</p>
+      <p>© <span id="year"></span> — Evolutionary PINNs for Fluid Mechanics · This project was funded by the <strong>University of Málaga (Universidad de Málaga), Spain</strong>,
+        under the <strong>B1-2022_18</strong> research grant.</p>
     </div>
   </footer>
 
@@ -864,3 +971,4 @@
   </script>
 </body>
 </html>
+
